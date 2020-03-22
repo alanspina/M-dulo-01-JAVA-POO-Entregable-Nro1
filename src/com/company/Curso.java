@@ -12,11 +12,6 @@ public class Curso {
     private Integer cupoMaximoDeAlumnos;
     private List<Alumno> listadoDeAlumnos;
 
-    public Curso(String nombre, Integer codigoDeCurso, Integer cupoMaximoDeAlumnos) {
-        this.nombre = nombre;
-        this.codigoDeCurso = codigoDeCurso;
-        this.cupoMaximoDeAlumnos = cupoMaximoDeAlumnos;
-    }
 
     //3. Crear los getter y setters para los atributos anteriores.
     public String getNombre() {
