@@ -8,5 +8,5 @@ public class DigitalHouseManager {
     List<Curso> listaCurso;
     List<Inscripcion> listaInscripcion;
 
-    
+
 }

@@ -1,5 +1,6 @@
 package com.company;
 
+import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.Objects;
 
@@ -43,4 +44,12 @@ public class Curso {
     public int hashCode() {
         return Objects.hash(codigoDeCurso);
     }
+
+    public Boolean agregarUnAlumno(Alumno unAlumno) {
+        return (listadoDeAlumnos.size() < this.cupoMaximoDeAlumnos);
+    }
+    public void eliminiarAlumno(Alumno unAlumno){
+        listadoDeAlumnos.remove(unAlumno);
+    }
+
 }
