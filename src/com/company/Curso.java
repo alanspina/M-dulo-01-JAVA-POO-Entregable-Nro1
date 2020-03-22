@@ -1,12 +1,17 @@
 package com.company;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Curso {
     private String nombre;
     private Integer codigoDeCurso;
+    private Profesor profesorTitular;
+    private Profesor profesorAdjunto;
+    private Integer cupoMaximoDeAlumnos;
+    private List<Alumno> listadoDeAlumnos;
 
-
+    
     //3. Crear los getter y setters para los atributos anteriores.
     public String getNombre() {
         return nombre;
