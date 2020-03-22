@@ -11,7 +11,7 @@ public class Curso {
     private Integer cupoMaximoDeAlumnos;
     private List<Alumno> listadoDeAlumnos;
 
-    
+
     //3. Crear los getter y setters para los atributos anteriores.
     public String getNombre() {
         return nombre;
