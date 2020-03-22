@@ -8,6 +8,13 @@ public class Profesor {
     private Integer antiguedad;
     private Integer codigoDeProfesor;
 
+    public Profesor(String nombre, String apellido, Integer antiguedad, Integer codigoDeProfesor) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.antiguedad = antiguedad;
+        this.codigoDeProfesor = codigoDeProfesor;
+    }
+
     //getter and setter de los atributos nombre, apellido, antiguedad y codigoDeProfesor
     public String getNombre() {
         return nombre;
@@ -46,5 +53,5 @@ public class Profesor {
     public int hashCode() {
         return Objects.hash(codigoDeProfesor);
     }
-    
+
 }
