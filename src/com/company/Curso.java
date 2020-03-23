@@ -1,6 +1,7 @@
 package com.company;
 
 import java.nio.file.attribute.UserPrincipalNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -12,6 +13,12 @@ public class Curso {
     private Integer cupoMaximoDeAlumnos;
     private List<Alumno> listadoDeAlumnos;
 
+    public Curso(String nombre, Integer codigoDeCurso, Integer cupoMaximoDeAlumnos) {
+        this.nombre = nombre;
+        this.codigoDeCurso = codigoDeCurso;
+        this.cupoMaximoDeAlumnos = cupoMaximoDeAlumnos;
+        this.listadoDeAlumnos = new ArrayList<>();
+    }
 
     //3. Crear los getter y setters para los atributos anteriores.
     public String getNombre() {
@@ -52,4 +59,11 @@ public class Curso {
         listadoDeAlumnos.remove(unAlumno);
     }
 
+    public void setProfesorTitular(Profesor profesorTitular) {
+        this.profesorTitular = profesorTitular;
+    }
+
+    public void setProfesorAdjunto(Profesor profesorAdjunto) {
+        this.profesorAdjunto = profesorAdjunto;
+    }
 }

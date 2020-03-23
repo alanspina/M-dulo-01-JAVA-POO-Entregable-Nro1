@@ -29,4 +29,8 @@ public class Alumno {
     public int hashCode() {
         return Objects.hash(codigoDeAlumno);
     }
+
+    public Integer getCodigoDeAlumno() {
+        return codigoDeAlumno;
+    }
 }
