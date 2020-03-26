@@ -63,8 +63,6 @@ public class DigitalHouseManager {
 
 
     public void inscribirAlumno(Integer codigoAlumno, Integer codigoCurso) {
-
-
         //busco el curso al que se quiere inscribir
         Curso cursoAInscribir = buscarCurso(codigoCurso);
         //busco al alumno al que se quiere inscribir
