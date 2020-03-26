@@ -45,5 +45,21 @@ public class Main {
         //8) Dar de baja a un profesor
         digitalHouseManager.bajaProfesor(004);
         digitalHouseManager.bajaCurso(20001);
+
+
+
+        /*
+        Parte K
+
+            1. ¿Cómo modificaría el diagrama de clases para que se le pueda consultar a un alumno a qué
+            cursos está inscripto?
+            // Responder a la pregunta en el archivo Main.java mediante un comentario.
+
+            Lo que haría seria cambiar el listadoDeAlumnos que tiene la clase curso y ponerle un listadoDeCursos a la clase Alumno.
+            Me cambiaría el tipo de pertenencia porque ahora en vez de que un curso tenga un alumno, un alumno tendria un curso.
+            Por otro lado abria que agregar el método consultarCusos(): Void
+
+
+         */
     }
 }
